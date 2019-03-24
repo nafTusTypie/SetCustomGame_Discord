@@ -4,7 +4,7 @@ const config = require('./config.json');
 
 client.on('ready', () => {
   console.log('Zalogowano jako ${client.user.tag}');
-  console.log('Zrobione przez : nafTus');
+  console.log('Zrobione przez : Nexareeek#8853');
 });
 
 client.on("message", async message => {
