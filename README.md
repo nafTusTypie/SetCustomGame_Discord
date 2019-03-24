@@ -5,3 +5,6 @@
 3. Przejdz do sciezki gdzie ma być bot
 4. Wpisz npm install discord.js ,a po tym node setgame.js
 5. Gotowe
+
+
+Uwaga Autor nie odpowiada za wszelkie szkody wyrządzone przez to programowanie. Korzystasz na własną odpowiedzialność!
