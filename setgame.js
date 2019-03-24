@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const config = require('./config.json');
 
 client.on('ready', () => {
-	console.log('Zalogowano jako ${client.user.nametag}');
+  console.log('Zalogowano jako ${client.user.tag}');
   console.log('Zrobione przez : nafTus');
 });
 
@@ -17,7 +17,7 @@ client.on("message", async message => {
 		if(message.author.id != config.ownerid) {
 			return;
 		}
-		let game = args.slice(0).join(' ');
+		let game = args.join(" ");
 		if(!game) game = "";
 		await client.user.setActivity(game);
 		console.log(`Gra : ${game}`);
