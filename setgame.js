@@ -4,7 +4,6 @@ const config = require('./config.json');
 
 client.on('ready', () => {
   console.log('Zalogowano jako ${client.user.tag}');
-  console.log('Zrobione przez : Nexareeek#8853');
 });
 
 client.on("message", async message => {
@@ -14,7 +13,7 @@ client.on("message", async message => {
 	const command = args.shift().toLowerCase();
 	
 	if(command == "setcustomgame") {
-		if(message.author.id != config.ownerid) {
+		if(message.author.id != client.user.id) {
 			return;
 		}
 		let game = args.join(" ");
@@ -23,7 +22,7 @@ client.on("message", async message => {
 		console.log(`Gra : ${game}`);
 	}
 	if(command == "setstatus") {
-		if(message.author.id != config.ownerid) {
+		if(message.author.id != client.user.id) {
 			return;
 		}
 		let status = args.slice(0).join(' ');
